@@ -1,0 +1,113 @@
+jQuery(window).on("load", function() {
+	"use strict";
+
+});
+
+jQuery(document).ready(function($) {
+	"use strict";
+
+	/* -----------------------------------------
+	 Main Navigation Init
+	 ----------------------------------------- */
+	$('#navigation').superfish({
+		delay:       300,
+		cssArrows: false,
+		animation:   { opacity:'show'},
+		speed:       'fast',
+		dropShadows: false
+	});
+
+	/* -----------------------------------------
+	 Homepage Fullscreen Slider Init
+	 ----------------------------------------- */
+
+	if ( $("#slides").length ) {
+		$(document).on('init.slides', function() {
+			$('.loading-container').fadeOut(function() {
+				$(this).remove();
+			});
+		});
+
+		var $play = 0;
+		if(Boolean(ThemeOption.slider_autoslide) == true)
+			$play = Number(ThemeOption.slider_speed)
+		else
+			$play = false;
+
+		$("#slides").superslides({
+			animation: ThemeOption.slider_effect,
+			play: $play,
+			animation_speed: Number(ThemeOption.slider_duration)
+		});
+	}
+
+	/* -----------------------------------------
+	 PrettyPhoto (Image Lightbox) Init
+	 ----------------------------------------- */
+	$("a[data-rel^='prettyPhoto']").prettyPhoto({
+		social_tools: false,
+		inline_markup: false,
+		show_title: false,
+		horizontal_padding: 40,
+		opacity: 0.9,
+		deeplinking: false,
+		hook: 'data-rel'
+	});
+
+	if ($('a[rel^="pp"]').length>0) {
+		$('a[rel^="pp"]').prettyPhoto({
+			deeplinking: false
+		});
+	}
+
+	if ($('.gallery-images').length > 0) {
+		$('.gallery-images').equalHeights();
+	}
+
+	/* -----------------------------------------
+	 Map Init
+	 ----------------------------------------- */
+	if ( $("#map").length ) {
+		gmap_initialize( 'map' );
+	}
+
+	// Responsive Videos
+	if ( $(".entry-content").length ) {
+		$(".entry-content").fitVids();
+	}
+
+});
+
+/* -----------------------------------------
+ Map Config
+ ----------------------------------------- */
+function gmap_initialize(map_element) {
+	'use strict';
+	if ( typeof google === 'object' && typeof google.maps === 'object' ) {
+		var myLatlng = new google.maps.LatLng( ThemeOption.map_coords_lat, ThemeOption.map_coords_long );
+
+		var mapOptions = {
+			zoom       : parseInt( ThemeOption.map_zoom_level ),
+			center     : myLatlng,
+			mapTypeId  : google.maps.MapTypeId.ROADMAP,
+			scrollwheel: false
+		};
+
+		var map = new google.maps.Map( document.getElementById( map_element ), mapOptions );
+		if ( map_element == 'panel_map' )
+			var panel_map = map;
+
+		var contentString = '<div id="content">' + ThemeOption.map_tooltip + '</div>';
+
+		var infowindow = new google.maps.InfoWindow( {
+			content: contentString
+		} );
+
+		var marker = new google.maps.Marker( {
+			position: myLatlng, map: map, title: ''
+		} );
+		google.maps.event.addListener( marker, 'click', function() {
+			infowindow.open( map, marker );
+		} );
+	}
+}
