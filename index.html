@@ -1,296 +1,369 @@
-<!doctype html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en-US"> <![endif]-->
-<!--[if gt IE 8]><!-->
-<html class="no-js" lang="es">
-<!--<![endifadsadsdsadas]-->
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>OASIS SPA</title>
-  
-  <link rel='stylesheet' id='font-awesome-css' href='https://www.cssigniter.com/preview/beaute/wp-content/cache/busting/56/preview/beaute/wp-content/plugins/socials-ignited/css/font-awesome-4.7.0.css'
-    type='text/css' media='all' />
- 
-  
-  <link rel='stylesheet' id='socials-ignited-css' href='wp-content/socials-ignited/css/style.css' type='text/css'
-    media='all' />
+    <meta charset="utf-8" />
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/img/apple-icon.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="assets/img/favicon.png">
 
-  <style id='socials-ignited-inline-css' type='text/css'>
-    #socials-ignited-2 i{color:#941742;background:#fff;font-size:17px;width:30px;height:30px;line-height:30px;border-radius:50px;opacity:1}#socials-ignited-3 i{color:#941742;background:#fff;font-size:17px;width:30px;height:30px;line-height:30px;border-radius:50px;opacity:1}#socials-ignited-4 i{color:#941742;background:#fff;font-size:17px;width:30px;height:30px;line-height:30px;border-radius:50px;opacity:1}
-  </style>
-  
-  <link rel='stylesheet' id='ci-base-css' href='wp-content/themes/beaute/css/base.css' type='text/css' media='all'
-  />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>OASIS SPA</title>
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <link href="assets/css/bootstrap.css" rel="stylesheet" />
+    <link href="assets/css/gaia.css" rel="stylesheet"/>
 
-  <link rel='stylesheet' id='superslides-css' href='wp-content/themes/beaute/css/superslides.css' type='text/css'
-    media='all' />
-
-  <link rel='stylesheet' id='ci-style-css' href='wp-content/beaute/style-1.7.css'
-    type='text/css' media='screen' />
-
-  <link rel='stylesheet' id='ci-mediaqueries-css' href='wp-content/themes/beaute/css/mediaqueries.css' type='text/css'
-    media='all' />
-
-  <link rel='stylesheet' id='ci-color-scheme-css' href='wp-content/themes/beaute/colors/default.css' type='text/css'
-    media='all' />
-  
-  <script type='text/javascript' src='wp-content/themes/beaute/panel/scripts/modernizr-2.6.2.js'></script>
-
-  <script type='text/javascript' src='https://maps.googleapis.com/maps/api/js?v=3'></script>
-
-  <script type='text/javascript' src='https://www.cssigniter.com/preview/beaute/wp-content/cache/busting/56/preview/beaute/wp-includes/js/jquery/jquery-1.12.4.js'></script>
-
-  <script type='text/javascript' src='https://www.cssigniter.com/preview/beaute/wp-content/cache/busting/56/preview/beaute/wp-includes/js/jquery/jquery-migrate.min-1.4.1.js'></script>
- 
-  <script>
-    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-      n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
-      n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
-      t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
-      document,'script','https://connect.facebook.net/en_US/fbevents.js');
-    
-      fbq('init', '1503891623250912');
-      fbq('track', "PageView");
-  </script>  
-
-
-<link href="https://fonts.googleapis.com/css?family=Amaranth" rel="stylesheet">
-
-  <style type="text/css">
-    body{background-color:#2d0c16;
-  font-family: 'Amaranth', sans-serif;
-    }
-    ul{
-      cursor: pointer;
-    }
-
-    .pacifico{
-      font-family: 'Pacifico', cursive;
-    }
-  </style>
+    <!--     Fonts and icons     -->
+    <link href='https://fonts.googleapis.com/css?family=Cambo|Poppins:400,600' rel='stylesheet' type='text/css'>
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+    <link href="assets/css/fonts/pe-icon-7-stroke.css" rel="stylesheet">
 </head>
 
-<body class="home page-template page-template-template-front page-template-template-front-php page page-id-4 ci-beaute ci-beaute-1-7 ci-scheme-default">
-  <div id="page">
-    <header id="header" class="row">
-      <div class="twelve columns">
-        <div class="wrap">
-          <div class="row">
-           
+<body>
+
+    <nav class="navbar navbar-default navbar-transparent navbar-fixed-top" color-on-scroll="200">
+        <!-- if you want to keep the navbar hidden you can add this class to the navbar "navbar-burger"-->
+        <div class="container">
+            <div class="navbar-header">
+                <button id="menu-toggle" type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar bar1"></span>
+                    <span class="icon-bar bar2"></span>
+                    <span class="icon-bar bar3"></span>
+                </button>
 
 
-            <div class="six columns">
-                          <div id="logo" class="textual" style="
-                display: inline-block;
-            ">
-                            <h1 style="
-                display: inline-block;
-            "><a href="file:///D:/escaneando/wp-content/images/logo.png">OASIS SPA</a></h1>
-                            <img src="wp-content/images/logo.png" alt="" style="
-               
-                display: inline-block;
-                margin-left:  1em;
-            
-            ">
-                          </div>
-                        </div>
+                 
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav navbar-right navbar-uppercase">
+                    <li>
+                   
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" id="scroller" class="dropdown-toggle" data-toggle="modal" data-target="#exampleModal" data-toggle="dropdown">
+                            <i class= "fa fa-share-alt"></i>¡Pide lo Yas!</a>
+
+
+                            <!-- Button trigger modal -->
+ 
+                      
+                    </li>
+                    <li>
+                       
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+    </nav>
+
+        
+        
+
+      
+
+
+
+
+    <div class="section section-header">
+        <div class="parallax filter  ">
+            <div class="image"
+                style="background-image: url('2.jpg')">
+            </div>
+            <div class="container">
+                <div class="content">
+                    <div class="title-area">
+                        <p><!-- Free Demo --></p>
+                        <h1 class="title-modern">OASIS SPA</h1>
+
+                                
+                    
+                        <h3>Siéntete más bella que nunca</h2>
+                        <div class="separator line-separator">♦</div>
+
+                        <img src="logo.png" width="130px" alt="">
+                    </div>
+
+                    <div class="button-get-started" >
+                         <!-- <a href= "#" id="scroller" class="btn btn-danger btn-fill"data-toggle="modal" data-target="#exampleModal"  >¡Pide lo ya!</a> -->
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
  
 
-            <div class="six columns">
-              <nav id="nav">
-                <ul id="navigation">
-                  <li class="appointment"><a href="contacto.html" class="book">¡Solicitalo ahora!</a></li>
-                  <li class="menu"> <a href="#"><i class="fa fa-reorder"></i> Menu</a>
-                    <ul id="menu-main-menu" class="">
-                      <li id="menu-item-63" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-4 current_page_item menu-item-63"><a href="servicio.html">Servicio</a></li>
-                 
-                      <li id="menu-item-57" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-57"><a>The team</a></li>
-                      <li id="menu-item-61" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-61"><a>Photo Galleries</a></li>
-                      <li id="menu-item-62" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-62"><a>Blog</a></li>
-                      <li id="menu-item-58" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-58"><a>Contact</a></li>
-                    </ul>
-                  </li>
-                </ul>
-              </nav>
+ 
+ 
+
+    <div class="section section-our-team-freebie" id="servicio">
+        <div class="parallax filter filter-color-black">
+            <div class="image" style="background-image:url('2.jpg')">
             </div>
-          </div>
+            <div class="container">
+                <div class="content">
+                    <div class="row">
+                        <div class="title-area">
+                            <h2>Nuestros Servicios</h2>
+                            <div class="separator separator-danger">✻</div>
+                            <p class="description">Sientete libre y relajada en este días, disfruta de nuestras ofertas y puedas compartir con nosotros nuestras experiencias.</p>
+                        </div>
+                    </div>
+
+                    <div class="team">
+                        <div class="row">
+                            <div class="col-md-10 col-md-offset-1">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="card card-member" >
+                                            <div class="content" style="height: 41em">
+                                                <div class="  ">
+                                                    <img alt="..." class="img- " src="service5.jpg"/>
+                                                </div>
+                                                <div class="description">
+                                                  <br>
+                                                    <h3 class="title">Alisado de cejas</h3>
+                                                                                                        <br>
+                                                    <p class="description" style="text-align: justify;">Las cejas son consideradas el marco fascial por excelencia, y el alisado es una técnica para eliminar las curvaturas indeseadas y lograr una forma definida y pulida de esta zona.</p>
+                                                  
+                                                 
+                                                       <a href="#" class="btn btn-danger btn-fill" data-toggle="modal" data-target="#exampleModal"  >¡Pide lo ya!</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                   <div class="col-md-4">
+                                       <div class="card card-member" >
+                                           <div class="content" style="height: 41em">
+                                               <div class="  ">
+                                                   <img alt="..." height="150px" class="img-responsive " src="https://cdn.cuponidad.pe/images/Deals/podologiabase.jpg"/>
+                                               </div>
+                                               <div class="description">
+                                                   <h3 class="title">Podología</h3>
+                                                   <p class="description" style="text-align: justify;">
+                                                     Los pies son el sustento del cuerpo y las bases fundamentales para el desplazamiento, sin embargo estas extremidades son subestimadas, obviando las atenciones necesarias para su cuidado y mantenimiento óptimo, la podología es la intervención científica que diagnostica las afecciones y desformidades de los pies,  tratandolas mediantes técnicas terapéuticas. 
+                                                   </p>
+                                                      <a href="#" class="btn btn-danger btn-fill" data-toggle="modal" data-target="#exampleModal" >¡Pide lo ya!</a>
+                                               </div>
+                                           </div>
+                                       </div>
+                                   </div>
+                                   <div class="col-md-4">
+                                       <div class="card card-member" >
+                                           <div class="content" style="height: 41em">
+                                               <div class="  ">
+                                                   <img alt="..." class="img- " src="http://www.llevauno.com.py/wp-content/uploads/2018/04/masaje-de-piedras-calientes-monalisaterrassa-.jpg"/>
+                                               </div>
+                                               <div class="description">
+                                                   <h3 class="title">Masajes con Piedras</h3>
+                                                   <p class="description" style="text-align: justify;">Al igual que muchas terapias que se realizan mediantes masajes, la terapia geotermal tambien produce notables mejoras en el bienestar general de nuestro organismo, pues reduce los dolores crónicos ya sean ocios o musculares, elimina las toxinas del cuerpo y ayuda a equilibrar el sistema nervioso y mejorar la circulación sanguinea.</p>
+                                                      <a href="#" class="btn btn-danger btn-fill" data-toggle="modal" data-target="#exampleModal" >¡Pide lo ya!</a>
+                                               </div>
+                                           </div>
+                                       </div>
+                                   </div>
+
+                                </div>
+                            </div>
+                            <div class="col-md-10 col-md-offset-1">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="card card-member" >
+                                            <div class="content" style="height: 41em">
+                                                <div class="  ">
+                                                    <img alt="..." class="img- " src="https://static.vix.com/es/sites/default/files/styles/large/public/u/usas-pestanas-postizas-4.jpg?itok=lSMtQFsw"/>
+                                                </div>
+                                                <div class="description">
+                                                    <h3 class="title">Lifting de Pestañas</h3>
+                                                    <p class="description" style="text-align: justify;">Tus pestañas lucirán un aspecto natural gracias a que el Lifting las levanta desde su base, lo que hará que parezcan más largas, aumentando visualmente su longitud. Gracias a este tratamiento se obtiene un mayor espesor de pestañas ya que se llega incluso a las pestañas mas cortas y proporciona unas pestañas infinitas, acentuando tambien su forma, para una mirada más sofisticada y sin necesidad de utilizar mascaras de pestañas.</p>
+                                                       <a href="#" class="btn btn-danger btn-fill" data-toggle="modal" data-target="#exampleModal"  >¡Pide lo ya!</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                   <div class="col-md-4">
+                                       <div class="card card-member" >
+                                           <div class="content" style="height: 41em">
+                                               <div class="  ">
+                                                   <img alt="..." class="img- " src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRK7Q7bsgaRxkxufEf3iMQKVsd2G4x_ge1lOwj6dLPhrpQFe2FkYA"/>
+                                               </div>
+                                               <div class="description">
+                                                   <h3 class="title">Masajes Descontracturantes</h3>
+                                                   <p class="description" style="text-align: justify;">Este masaje es algo más fuerte que uno de tipo solo relajante, pues se utiliza para relajar la musculatura y disolver las contracturas que se producen por el extres, las malas posturas, la falta de descanzo o una vida demasiado sedentaria.</p>
+                                                   <br>
+                                                   <br>
+                                                   <br>
+                                                      <a href="#" class="btn btn-danger btn-fill" data-toggle="modal" data-target="#exampleModal" >¡Pide lo ya!</a>
+                                               </div>
+                                           </div>
+                                       </div>
+                                   </div>
+                                   <div class="col-md-4">
+                                       <div class="card card-member" >
+                                           <div class="content" style="height: 41em">
+                                               <div class="  ">
+                                                   <img alt="..." class="img- " src="https://endimages.s3.amazonaws.com/cache/a3/e4/a3e43766f013efe2db5de2e67b459ed0.jpg"/>
+                                               </div>
+                                               <div class="description">
+                                                   <h3 class="title">Reflexología</h3>
+                                                   <p class="description" style="text-align: justify;">La Reflexología es un antiguo arte del masaje en los pies, que se originó en china y que también era conocida por los antiguos egipcios. Se cree que la energía corre atravéz del cuerpo en los canales conocidos como meridianos y que el masaje de los pies estimula estos canales de energia, promueve la curación y la relajación.</p>
+                                                     <br>
+                                                   <br>
+                                                      <a href="#" class="btn btn-danger btn-fill" data-toggle="modal" data-target="#exampleModal" >¡Pide lo ya!</a>
+                                               </div>
+                                           </div>
+                                       </div>
+                                   </div>
+
+                                </div>
+                            </div>
+
+                          
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </header>
-    <div class="loading-container">
-      <div class="pulse"></div>
     </div>
-    <div id="slides">
-      <ul class="slides-container">
-        <li> <img src="wp-content/beaute/files/2013/11/home1.jpg" />
-          <div class="row">
-            <div class="slide-content five columns ">
-              <h1>Siéntete más bella que nunca</h1>  </div>
-          </div>
-        </li>
-        <li> <img src="wp-content/beaute/files/2013/11/home2.jpg" />
-          <div class="row">
-            <div class="slide-content five columns offset-by-seven right">
-              <h1>Ser tu mejor versión</h1> 
-              
-          </div>
-        </li>
-        <li> <img src="wp-content/beaute/files/2013/11/home3.jpg" />
-          <div class="row">
-            <div class="slide-content five columns ">
-              <h1>Siéntete más bella que nunca</h1> </div>
-          </div>
-        </li>
-      </ul>
-      <nav class="slides-navigation">
-        <a href="#" class="next"> <i class="fa fa-chevron-right"></i> </a>
-        <a href="#" class="prev"> <i class="fa fa-chevron-left"></i> </a>
-      </nav>
+ 
+
+    <div class="section section-small section-get-started">
+        <div class="parallax filter">
+            <div class="image"
+                style="background-image: url('4.jpg'); background-size: cover;">
+            </div>
+            <div class="container" style="margin-bottom: 4em"> 
+                <div class="title-area">
+                    <br>
+                    <br>
+                    <h2 class="text-white">Encuentranos</h2>
+                    <div class="separator line-separator">♦</div>
+                    <p class="description"> Póngase en contacto con una sesión de spa completa. Usted será dirigido por un profesional cualificado que le motivará dándole atención particular</p>
+                </div>
+
+                <div class="button-get-started">
+                   
+
+                   <iframe width="85%" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d962.4147855300909!2d-74.5293911509863!3d-8.381885929824879!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91a3bcee1a9cf12b%3A0x848c819ec540965e!2sLa+Positiva+Seguros+-+Pucallpa!5e0!3m2!1ses-419!2spe!4v1523756710954" width="600" height="290" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="featurette">
-      <div class="row">
-        <div class="twelve columns">
-          <div class="wrap">
+
+
+    <footer class="footer footer-big footer-color-black" data-color="black">
+        <div class="container">
             <div class="row">
-              <div class="four columns carddetalle">
-                <div class="item feat">
-                  <figure class="item-thumb">
-                    <a href="detallealisado.html"><img src="wp-content/beaute/files/2013/11/service5.jpg" class="attachment-ci_thumb size-ci_thumb wp-post-image"
-                        alt="" srcset="wp-content/beaute/files/2013/11/service5.jpg 760w, wp-content/beaute/files/2013/11/service5-300x153.jpg 300w"
-                        sizes="(max-width: 760px) 100vw, 760px" />
-                      <div class="overlay"></div>
-                      <h3>alisado de cejas</h3>
-                    </a>
-                  </figure>
-                  <h3>alisado de cejas</h3>
+              
+                <div class="col-md-12  col-sm-12 text-center">
+                    <div class="info">
+                        <h5 class="title" style="width: 100%; display: inline-block;">Siguenos en nuestras redes sociales</h5>
+                        <nav>
+                            <ul>
+                                <li style="display: inline-block;">
+                                    <a href="#" class="btn btn-social btn-facebook btn-simple">
+                                         correo:oasis.spa.pucallpa@gmail.com
+                                         <br>
+                                         telefono: 061603081
+                                         <br>
+                                         celular: 961636972
+                                         <br>
+                                         Dirección: Av.San Martín 198 
+                                         <br>Distrito de Callería 
+                                         <br>provicia de Provincia de Coronel Portillo 
+                                         <br>Departamento Ucayali.
+
+
+
+                                    </a>
+                                </li>
+                              
+                            </ul>
+                        </nav>
+                    </div>
                 </div>
-              </div>
-              <div class="four columns carddetalle">
-                <div class="item feat">
-                  <figure class="item-thumb">
-                    <a href="detallefacial.html"><img src="wp-content/beaute/files/2013/11/service3.jpg" class="attachment-ci_thumb size-ci_thumb wp-post-image"
-                        alt="" srcset="wp-content/beaute/files/2013/11/service3.jpg 760w, wp-content/beaute/files/2013/11/service3-300x153.jpg 300w"
-                        sizes="(max-width: 760px) 100vw, 760px" />
-                      <div class="overlay"></div>
-                      <h3>Tratamiento facial</h3>
-                    </a>
-                  </figure>
-                  <h3>Tratamiento facial</h3>
-                </div>
-              </div>
-              <div class="four columns carddetalle">
-                <div class="item feat">
-                  <figure class="item-thumb">
-                    <a href="detallemanicura.html"><img src="wp-content/beaute/files/2013/11/service2.jpg" class="attachment-ci_thumb size-ci_thumb wp-post-image"
-                        alt="" srcset="wp-content/beaute/files/2013/11/service2.jpg 760w, wp-content/beaute/files/2013/11/service2-300x153.jpg 300w"
-                        sizes="(max-width: 760px) 100vw, 760px" />
-                      <div class="overlay"></div>
-                      <h3>Manicura</h3>
-                    </a>
-                  </figure>
-                  <h3>Manicura</h3>
-                </div>
-              </div>
             </div>
+            <hr>
+            <div class="copyright">
+                 © <script> document.write(new Date().getFullYear()) </script> Desarrollado y creado por empresas Riva
+            </div>
+        </div>
+    </footer>
+
+
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">¡Solicitalo ahora!</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="margin-top: -22px !important; "> <span aria-hidden="true">&times;</span>
+            </button>
           </div>
+          <div class="modal-body">
+            <form action="https://estudiojuridicouhty.000webhostapp.com/sendemail.php" method="post">
+
+            <p>Sirvanos en enviar su dato para reservar una cita</p>
+
+              <div class="form-group">
+                <label for="recipient-name" class="col-form-label">Email:</label>
+                <input type="text" name="email" placeholder="Ingrese correo electronico" class="form-control" id="title" required>
+              </div>
+              <div class="form-group">
+                <label for="message-text" class="col-form-label">Mensaje:</label>
+                <textarea class="form-control" name="mensaje"  placeholder="Explicanos lo que necesitas"  id="message-text" required></textarea>
+              </div>
+               <input type="submit" value="Enviar"></div>
+
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+           <!--  <button type="button" style="background: #000000 !important;color: white !important;cursor: pointer !important;border: 1px solid white; " class="btn btn-success" data-dismiss="modal">Enviar mensaje</button> -->
         </div>
       </div>
-
-      
     </div>
-  </div>
-  <script>
-    if (top.location == self.location) {
-      
-      // GA
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-      ga('create', 'UA-1396486-40', 'auto');
-      ga('send', 'pageview');
-      ga('require', 'linker'); 
-      ga('linker:autoLink', ['cssigniter.com', 'fastspring.com']);
-    
-      // CTA
-      /*
-      a = document.createElement('a');
-      a.href = 'https://www.cssigniter.com/ignite/pricing/';
-      a.setAttribute('style', 'position:fixed; bottom: 25px; right: 25px; z-index: 100000000; padding: 15px 40px; border-radius:50px; background:#68a834; box-shadow: 0 3px 15px 0 rgba(0,0,0,.25); color: #fff; font: bold 14px "Helvetica Neue", Helvetica, Arial, san-serif !important;"');
-      a.innerHTML = 'Download Today!'; 
-      document.body.appendChild(a);
-      */
-    
-    }
-  </script>
-  <script src="//rum-static.pingdom.net/pa-5a352ff8d31eee0007000075.js" async></script>
-  <script type='text/javascript' src='https://www.cssigniter.com/preview/beaute/wp-content/cache/busting/56/preview/beaute/wp-content/plugins/visualizer/js/lib/clipboardjs/clipboard.min-3.0.5.js'></script>
-  <script type='text/javascript'>
-    /* <![CDATA[ */ var wpcf7 = {"apiSettings":{"root":"https:\/\/www.cssigniter.com\/preview\/beaute\/wp-json\/contact-form-7\/v1","namespace":"contact-form-7\/v1"},"recaptcha":{"messages":{"empty":"Please verify that you are not a robot."}},"cached":"1"}; /* ]]> */
-  </script>
-  <script type='text/javascript' src='https://www.cssigniter.com/preview/beaute/wp-content/plugins/contact-form-7/includes/js/scripts.js'></script>
-  <script type='text/javascript'>
-    var renderInvisibleReCaptcha = function() {
-    
-        for (var i = 0; i < document.forms.length; ++i) {
-            var form = document.forms[i];
-            var holder = form.querySelector('.inv-recaptcha-holder');
-    
-            if (null === holder) continue;
-        holder.innerHTML = '';
-    
-            (function(frm){
-          var cf7SubmitElm = frm.querySelector('.wpcf7-submit');
-                var holderId = grecaptcha.render(holder,{
-                    'sitekey': '6LfQHTEUAAAAAKhTW6G2HyN6MdoAwi2gRg9dOgRR', 'size': 'invisible', 'badge' : 'bottomright',
-                    'callback' : function (recaptchaToken) {
-              ((null !== cf7SubmitElm) && (typeof jQuery != 'undefined')) ? jQuery(frm).submit() : HTMLFormElement.prototype.submit.call(frm);
-                    },
-                    'expired-callback' : function(){grecaptcha.reset(holderId);}
-                });
-    
-                frm.onsubmit = function (evt){evt.preventDefault();grecaptcha.execute(holderId);};
-    
-          if(null !== cf7SubmitElm && (typeof jQuery != 'undefined') ){
-            jQuery(cf7SubmitElm).one('click', function(clickEvt){
-              clickEvt.preventDefault();
-              grecaptcha.execute(holderId);
-            });
-          }
-    
-            })(form);
-        }
-    };
-  </script>
-  <script type='text/javascript' async defer src='https://www.google.com/recaptcha/api.js?onload=renderInvisibleReCaptcha&#038;render=explicit'></script>
-  <script type='text/javascript' src='https://www.cssigniter.com/preview/beaute/wp-includes/js/comment-reply.min.js'></script>
-  <script type='text/javascript' src='https://www.cssigniter.com/preview/beaute/wp-content/cache/busting/56/preview/beaute/wp-content/themes/beaute/panel/scripts/jquery.hoverIntent.r7.min-r7.js'></script>
-  <script type='text/javascript' src='https://www.cssigniter.com/preview/beaute/wp-content/cache/busting/56/preview/beaute/wp-content/themes/beaute/panel/scripts/superfish-1.7.4.min-1.7.4.js'></script>
-  <script type='text/javascript' src='https://www.cssigniter.com/preview/beaute/wp-content/cache/busting/56/preview/beaute/wp-content/themes/beaute/js/jquery.prettyPhoto-3.1.6.js'></script>
-  <script type='text/javascript' src='wp-content/themes/beaute/js/jquery.equalHeights.js'></script>
-  <script type='text/javascript' src='https://www.cssigniter.com/preview/beaute/wp-content/cache/busting/56/preview/beaute/wp-content/themes/beaute/panel/scripts/jquery.fitvids-1.1.js'></script>
-  <script type='text/javascript'>
-    /* <![CDATA[ */ var ThemeOption = {"map_zoom_level":"6","map_coords_lat":"33.59","map_coords_long":"-80","map_tooltip":"Pointblank Str. 14, 54242, California","slider_autoslide":"1","slider_effect":"fade","slider_duration":"700","slider_speed":"5000"}; /* ]]> */
-  </script>
-  <script type='text/javascript' src='https://www.cssigniter.com/preview/beaute/wp-content/cache/busting/56/preview/beaute/wp-content/themes/beaute/js/scripts-1.7.js'></script>
-  <script type='text/javascript' src='wp-content/themes/beaute/js/jquery.superslides.min.js'></script>
-  <script type='text/javascript' src='https://www.cssigniter.com/preview/beaute/wp-content/cache/busting/56/preview/beaute/wp-content/themes/beaute/panel/components/retinajs/dist/retina-1.3.0.js'></script>
-  <script type='text/javascript' src='https://www.cssigniter.com/preview/beaute/wp-includes/js/wp-embed.min.js'></script>
-  <!--[if (gte IE 6)&(lte IE 8)]> <script type="text/javascript" src="https://www.cssigniter.com/preview/beaute/wp-content/themes/beaute/panel/scripts/selectivizr-min.js"></script> <![endif]-->
-</body>
-  
 
+
+
+
+</body>
+
+<!--   core js files    -->
+<script src="assets/js/jquery.min.js" type="text/javascript"></script>
+<script src="assets/js/bootstrap.js" type="text/javascript"></script>
+
+<!--  js library for devices recognition -->
+<script type="text/javascript" src="assets/js/modernizr.js"></script>
+
+<!--  script for google maps   -->
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+
+<!--   file where we handle all the script from the Gaia - Bootstrap Template   -->
+<script type="text/javascript" src="assets/js/gaia.js"></script>
+
+<!-- 
 
 <script>
-  
-  // jQuery('.carddetalle').on('click', function (e) {
-  //    var text = jQuery(this).text();
-  //    alert(text);
-  // });
-  
-
+    $('#scroller').on('click', function (e) {
+       var targetSec = $(this).text();
+       $('html, body').animate({
+          scrollTop: $('#' + "servicio").offset().top
+       }, 1000);
+    });
 </script>
 
+
+ <script>
+    $('#scroller_').on('click', function (e) {
+       var targetSec = $(this).text();
+       $('html, body').animate({
+          scrollTop: $('.' + "AS").offset().top
+       }, 1000);
+    });
+  </script> -->
+
+
+
 </html>
-<!-- This website is like a Rocket, isn't it? Performance optimized by WP Rocket. Learn more: https://wp-rocket.me - Debug: cached@1516194847 -->
